@@ -1,0 +1,566 @@
+/* 菊地 */
+/*-- body--*/
+body {
+	color: #000;
+	font: 15px/1.7 "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", sans-serif;
+	background-color: #fff;
+	text-align: left;
+        margin: 0; 
+        width: 100%;
+	height: 100%;
+}
+/*-- body--*/
+ol, ul {
+	list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+
+
+
+/**
+ * base
+ */
+.wrapper {
+	width: 100%;
+	text-align: center;
+	font-size: 13px;
+	background: #BED6E6;
+}
+
+.contents {
+	width: 100%;
+	height: 100%;
+}
+.hedder{
+    background:#6495ed;
+    
+}
+.contents__inner {
+	box-sizing: border-box;
+	width: 100%;
+	margin: 0 auto;
+	color: #6495ed;
+  position:fixed;
+  z-index:100;
+background:#fff;
+
+}
+
+.contents__inner h1 {
+	margin-bottom: 30px;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+
+/**
+ * btn
+ */
+.btn__box {
+	width: 250px;
+	height: 50px;
+	line-height: 50px;
+	margin: 100px auto 0;
+	font-size: 13px;
+}
+
+.btn__box a {
+	position: relative;
+	display: block;
+	color: #666;
+	background: #fff;
+}
+
+.btn__box a:before {
+	content: '';
+	position: absolute;
+	top: -5px;
+	left: -5px;
+	box-sizing: border-box;
+	width: 250px;
+	height: 50px;
+	border: 1px solid #666;
+	-webkit-transition: all .5s ease;
+	transition: all .5s ease;
+}
+
+.btn__box a:hover:before {
+	-webkit-transform: translate(10px, 10px);
+	transform: translate(10px, 10px);
+}
+
+
+/**
+ * menu
+ */
+.menu {
+	position: relative;
+	width: 100%;
+	height: 50px;
+	max-width: 100%;
+	margin: 0 auto;
+        padding: 0;
+}
+
+.menu > li {
+	float: left;
+	width: 20%;
+	height: 50px;
+	line-height: 50px;
+	background: #fff;
+}
+
+.menu > li a {
+	display: block;
+	color: #fff;
+}
+
+.menu > li a:hover {
+	color: #fff;
+}
+
+.menu__none:hover,
+.menu__multi:hover,
+.menu__mega:hover,
+.menu__single:hover {
+  background: #fff;
+  -webkit-transition: .2s ease;
+  transition: .2s ease;
+}
+
+.menu__second-level li {
+  border-top: 1px solid #111;
+}
+
+.menu__third-level li {
+  border-top: 1px solid #111;
+}
+
+.menu__second-level li a:hover {
+  background: #dcdcdc;
+}
+
+.menu__third-level li a:hover {
+  background: #2a1f1f;
+}
+
+.menu__fourth-level li a:hover {
+  background: #1d0f0f;
+}
+
+.init-bottom:after {
+  content: '';
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  margin: 0 0 0 15px;
+  border-right: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.menu:before,
+.menu:after {
+  content: "";
+  display: table;
+}
+
+.menu:after {
+  clear: both;
+}
+
+.menu {
+  zoom: 1;
+}
+
+
+/**
+ * single menu
+ */
+.menu > .menu__single {
+  position: relative;
+}
+
+.menu__single .menu__second-level {
+  position: absolute;
+  top: 40px;
+  width: 100%;
+  background: #fff;
+  -webkit-transition: .2s ease;
+  transition: .2s ease;
+  visibility: hidden;
+  opacity: 0;
+  padding: 0;
+}
+
+.menu__single:hover > .menu__second-level {
+  top: 50px;
+  visibility: visible;
+  opacity: 1;
+}
+/*--写真スライドさせる--*/
+.slide {
+  position: relative;
+  width: 100%;
+  height: 750px;
+  overflow: hidden;
+  
+
+}
+
+.slide-image {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  animation: slider-1 24s linear infinite;
+  margin-top:135.7px;
+}
+
+.slide-image:nth-child(1) {
+  background-image: url(/photo/DJI_0001.JPG);
+  animation-delay: -2s;
+}
+
+.slide-image:nth-child(2) {
+  background-image: url(/photo/DSC_9942.JPG);
+  animation-delay: 6s;
+}
+
+.slide-image:nth-child(3) {
+  background-image: url(/photo/DSC_2040.JPG);
+  animation-delay: 14s;
+}
+
+@keyframes slider-1 {
+  0% {
+    opacity: 0;
+    transform: scale(1);
+  }
+  4.16% {
+    opacity: 1;
+  }
+  33.33% {
+    opacity: 1;
+  }
+  41.66% {
+    opacity: 0;
+    transform: scale(1.2);
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.container {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+/*--写真スライドさせる--*/
+/*--写真だったり、文字のサイズや間の微調整--*/
+.gagaga{
+margin-top:135.7px;
+}
+.saisyo{
+margin-top:135.7px;
+}
+.ganba{
+background:#66ccff;
+width:100%;
+padding:0;
+margin:0;
+}
+.gakko1{
+width:100%;
+margin:0;
+padding:0;
+display:flex;
+}
+
+.gakko11{
+width:100%;
+padding-top: 100px;
+padding-right:0;
+margin:0;
+text-align:right;
+}
+.gakko12{
+width:50%;
+text-align:center;
+padding-top:150px;
+padding-left:25px;
+}
+.gakko13{
+width: calc(100% - 50%);
+text-align:right;
+padding-top:150px;
+padding-left:80px;
+}
+.gakko21{
+width:100%;
+padding-top: 100px;
+padding-left:0;
+margin:0;
+text-align:left;
+}
+.gakko22{
+width:500px;
+text-align:center;
+padding-top:150px;
+padding-left:25px;
+}
+.gakko23{
+width: calc(100% - 50%);
+text-align:right;
+padding-top:500px;
+padding-left:25%;
+}
+.gakko33{
+width: calc(100% - 50%);
+text-align:right;
+padding-top:150px;
+padding-left:10%;
+}
+.oldback{
+background:#66ccff;
+padding-top:200px;
+padding-bottom:40px;
+}
+.old{
+margin-left:15px;
+margin-right:15px;
+padding-top:40px;
+padding-bottom:10px;
+background:#fff;
+}
+.gakka{
+margin-left:40px;
+margin-right:40px;
+padding-top:20px;
+margin-bottom:40px;	
+text-align:center;
+background:#add8ec;
+
+}
+.syoukai{
+width:100%;
+background:#fff;
+display:flex;
+
+}
+.syoukai h1{
+padding-top: 185.7px; 
+margin-top:-135.7px;
+}
+.syouka{
+width:100%;
+background:#fff;
+display:flex;
+margin-left:40px;
+}
+.syou1{		
+width:50%;
+height:400px;
+}
+.syou2{
+width: calc(100% - 50%);
+text-align:left;
+
+}
+.syou2 h1{
+padding-top: 185.7px; 
+margin-top:-135.7px;
+text-align:left;
+}
+.syou2 p{
+text-align:left;
+font-size:15px;
+padding-right:25%;
+}
+.syou3{
+width: calc(100% - 50%);
+text-align:left;
+}
+.syou4{		
+width:100%;
+}
+.syou41{
+width:33%;;
+margin-left:12.5%;
+text-align:center;
+}
+
+.syou42{
+width: calc(100% - 33%);
+text-align:center;
+margin-left:3.25%
+}
+
+.syou43{
+width: calc(100% - 66%);
+text-align:center;
+margin-right:25%;
+}
+.syou12{
+width:25%;
+text-align:left;
+padding-left:40px;
+}
+.syou13{
+width: calc(100% - 12.5%);
+text-align:left;
+}
+.syou14{
+width: calc(100% - -70%);
+text-align:left;
+}
+.syou15{
+width: calc(100% - -90%);
+text-align:left;
+padding-left:0;
+}
+
+.syou3 p{
+text-align:left;
+font-size:15px;
+padding-right:25%;
+padding-top:110px;
+}
+.syou5{		
+width:50%;
+}
+.syou6{
+width: calc(100% - 50%);
+text-align:left;
+}
+.syou7{
+width: 100%;
+text-align:center;
+}
+.bukatudou{
+padding-left:50px;
+padding-right:50px;
+text-align:left;
+background:#fff;
+}
+.bukatudou h1{
+padding-top: 185.7px; 
+margin-top:-135.7px;
+}
+.bukatu{
+display: inline-block;
+text-align:left;
+}
+
+.gyoji{
+padding-top:100px;
+}
+.gyoji h1{
+padding-top: 185.7px; 
+margin-top:-135.7px;
+}
+
+.akusesu{
+background:#6495ed;
+font-size:35px;
+margin:0;
+padding:0;
+color:#fff
+}
+.top{
+height:200px;
+padding-top:80px;
+background:#66ccff;
+
+}
+.foot-nav-wrap{
+width:100%;
+height:200px;
+display:flex;
+background:#fff;
+
+}
+
+.child1{
+width:450px;
+text-align:center;
+}
+.child2{
+width:450px;
+text-align:center;
+}
+.child3{
+width:450px;
+text-align:center;
+}
+.child4{
+width:450px;
+text-align:center;
+}
+.top {
+text-align:center;
+}
+/*--/写真だったり、文字のサイズや間の微調整--*/
+/*--footer--*/
+.footer{
+background:#fff;
+width:100%;
+height:200px;
+display:flex;
+}
+.footer_sitename{
+margin:0;
+font-size:30px;
+font-weight: bold;
+width:100%;
+background:#fff;
+
+}
+.footer-1{
+width:50%;
+text-align:center;
+}
+.footer-2{
+width: calc(100% - 50%);
+text-align:center;
+}
+.footer_sitename{
+font-size:30px;
+font-weight: bold;
+width:100%;
+}
+.footer_address{
+font-size:12px;
+width:100%;
+}
+/*--写真3枚並べたい--*/
+.flex-container{
+  width: 100%;
+  background-color:#fff;
+  margin-left:15px;
+  margin-right:15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.flex-item{
+  background-color: #fff;
+  color: white;
+  margin: 0 2em 2em;
+}
+@media screen and (max-width: 780px){
+  .flex-container{
+    flex-direction: column-reverse;
+  }
+}
+/*写真並べたい*/

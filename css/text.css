@@ -1,0 +1,106 @@
+/* 菊地 */
+/* 文字（微調整）*/
+h2{
+    text-align:center;
+    font-size:35px;
+}
+p{
+    text-align:center;
+    color:black;
+}
+h3{
+text-align:left;
+margin-left: 60px;
+font-size:26px;
+
+}
+.kanata{
+text-align:center;
+background:#fff;
+}
+.kanata2{
+text-align:center;
+background:#fff;
+margin:0;
+}
+.kanata2 h2{
+margin-top:0;
+font-size:40px;
+padding-top:20px;
+}
+.kanata2 p{
+font-size:20px;
+text-align:left;
+padding-left:25%;
+padding-right:25%;
+padding-bottom:40px;
+margin-bottom:0;
+}
+.kanata3{
+height:50px;
+text-align:center;
+background:#fff;
+margin:0;
+}
+.taki{
+padding-left:25%;
+padding-top: 185.7px; 
+margin-top:-135.7px;
+text-align:left;
+
+}
+.taki2{
+padding-left:12.5%;
+padding-top: 185.7px; 
+margin-top:-135.7px;
+text-align:left;
+
+}
+.taki3{
+padding-top: 185.7px; 
+margin-top:-135.7px;
+
+
+}
+
+.left{
+text-align:left;
+margin-left: 60px;
+font-size:20px;
+}
+.left2{
+text-align:left;
+margin-left: 60px;
+font-size:20px;
+margin-bottom:0;
+}
+
+.gakka h1{
+padding-top: 135.7px; 
+margin-top:-135.7px;
+}
+.gakko12 h1{
+padding-top:30px;
+font-size:20px;
+text-align:left;
+}
+.gakko12 p{
+padding-top:30px;
+padding-left:25px;
+font-size:16px;
+text-align:left;
+}
+.gakko22 h1{
+padding-top:30px;
+font-size:20px;
+text-align:left;
+}
+.gakko22 p{
+padding-top:30px;
+padding-left:25px;
+font-size:16px;
+text-align:left;
+}
+.saisyo{
+margin-top:135.7px;
+}
