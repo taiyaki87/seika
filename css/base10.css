@@ -229,17 +229,17 @@ background:#fff;
 }
 
 .slide-image:nth-child(1) {
-  background-image: url(/photo/DJI_0001.JPG);
+  background-image: url(../photo/DJI_0001.JPG);
   animation-delay: -2s;
 }
 
 .slide-image:nth-child(2) {
-  background-image: url(/photo/DSC_9942.JPG);
+  background-image: url(../photo/DSC_9942.JPG);
   animation-delay: 6s;
 }
 
 .slide-image:nth-child(3) {
-  background-image: url(/photo/DSC_2040.JPG);
+  background-image: url(../photo/DSC_2040.JPG);
   animation-delay: 14s;
 }
 
